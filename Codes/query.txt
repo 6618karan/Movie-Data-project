@@ -1,0 +1,76 @@
+1. Find the number of movies released between 1950 and 1960.
+
+a = open("movie.txt", "r")
+t=0
+for line in a:
+    a=line.split(",")
+    if a[2]>'1950' and a[2]<='1960':    
+        t=t+1
+print("The movies released between 1950 and 1960 is {}".format(t))
+
+
+
+2. Find the number of movies having rating more than 4.
+
+a=open("movie.txt",'r')
+movies=0
+for line in a:
+    a=line.split(",")
+    if a[3]>'4':
+        movies=movies+1
+print("The movies with rating 4 are {}".format(movies))
+
+
+
+3. Find the movies whose rating are between 3 and 4.
+
+a=open('movie.txt','r')
+movies=0
+for line in a:
+    a=line.split(",")
+    if a[3]>'3' and a[3]<'4':
+        movies=movies+1
+print("The movies between rating 3 and 4 is ",movies)
+
+
+
+
+4. Find the number of movies with duration more than 2 hours (7200 second).
+
+
+a=open("movie.txt",'r')
+movies=0
+for line in a:
+    a=line.split(",")
+    if a[4]>'7200':
+        movies =movies+1
+print("The movies greater than 2 hours is {}".format(movies))
+
+
+
+5. Find the list of years and number of movies released each year.
+
+a=open('movie.txt','r')
+count=0
+b=[]
+for line in a:
+    a=line.split(',')
+    b.append(a[2])
+c=list(set(b))
+for i in range(len(c)):
+    d=b.count(c[i])
+    print("Total number of movies in year {} is {}".format(c[i],x))
+
+6. Find total number of movies in dataset
+
+=>   b=open('movie.txt','r')
+for count,index in enumerate (b):
+   pass
+print('Total number of movies is {}'.format(count+1))
+
+
+
+
+
+
+
