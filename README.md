@@ -1,0 +1,2 @@
+# Movie-Data-project
+This is a project where we were given a dataset and we had to run some queries to find some results. This project is done with the help of file handling in python. The dataset contained name of movies along with its rating, released year and duration in second.We have opened the file which is in text format . Then we have converted the file into a list by using split. For printing the output we have used .format.
