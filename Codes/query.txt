@@ -4,7 +4,7 @@ a = open("movie.txt", "r")
 t=0
 for line in a:
     a=line.split(",")
-    if a[2]>'1950' and a[2]<='1960':    
+    if a[2]>'1950' and a[2]<='1960':    ( it should be the a[2] > '1950' and a[2] < '1960':)
         t=t+1
 print("The movies released between 1950 and 1960 is {}".format(t))
 
